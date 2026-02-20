@@ -18,7 +18,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </p>
                 <form method="post" action="<?= base_url('auth/reset_password') ?>">
                     <div class="flex justify-center mb-4">
-                        <div class="flex space-x-3" data-pin-input>
+                        <div class="flex space-x-3" data-pin-input='{"availableCharsRE": "^[0-9]+$"}'>
                             <input type="text" name="otp1" maxlength="1" class="pin-input" data-pin-input-item
                                 autofocus />
                             <input type="text" name="otp2" maxlength="1" class="pin-input" data-pin-input-item />

@@ -34,6 +34,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <input type="tel" id="no_hp" class="input w-full" placeholder="Nomor HP" required>
                             <label class="input-floating-label" for="no_hp">Nomor HP</label>
                         </div>
+                        <div class="input-floating">
+                            <input type="email" id="email" class="input w-full" placeholder="Email" required>
+                            <label class="input-floating-label" for="email">Email</label>
+                        </div>
                     </div>
                 </div>
 
@@ -72,13 +76,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-gradient w-full mt-2">
+                <button class="btn btn-primary btn-gradient w-full mt-2" id="registerBtn">
                     Daftar Sekarang
                 </button>
 
                 <div class="text-center text-sm">
                     Sudah punya akun?
-                    <a href="<?= base_url('login') ?>" class="link link-primary font-medium">
+                    <a href="{{ base_url('login') }}" class="link link-primary font-medium">
                         Masuk
                     </a>
                 </div>
@@ -86,4 +90,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </div>
     </div>
+
+    <script src="{{ base_url('assets/js/jquery-4.0.0.min.js') }}"></script>
+    <script src="{{ base_url('assets/js/notyf.min.js') }}"></script>
+    <script src="{{ base_url('assets/js/pages/auth/register.js') }}"></script>
 @endsection
