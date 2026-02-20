@@ -18,7 +18,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
                 <div class="navbar-center max-md:hidden">
                     <ul class="menu menu-horizontal gap-2 p-0 text-base rtl:ml-20">
-                        <li><a href="#" class="font-medium">Beranda</a></li>
+                        <li><a href="<?= base_url('home') ?>" class="font-medium">Beranda</a></li>
                         <li class="dropdown relative inline-flex [--auto-close:inside] [--offset:9]">
                             <button id="dropdown-end" type="button"
                                 class="dropdown-toggle dropdown-open:bg-base-content/10 dropdown-open:text-base-content max-md:px-2 font-medium"
@@ -60,7 +60,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </button>
                         <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu"
                             aria-orientation="vertical" aria-labelledby="dropdown-default">
-                            <li><a class="dropdown-item" href="#">Beranda</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('home') ?>">Beranda</a></li>
                             <li class="dropdown relative [--auto-close:inside] [--offset:9] [--placement:bottom]">
                                 <button id="dropdown-end-2"
                                     class="dropdown-toggle dropdown-item dropdown-open:bg-base-content/10 dropdown-open:text-base-content justify-between"
@@ -76,7 +76,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-primary btn-gradient" href="#">Login</a>
+                    <a class="btn btn-primary btn-gradient" href="<?= base_url('login') ?>">Login</a>
                 </div>
             </nav>
         </div>

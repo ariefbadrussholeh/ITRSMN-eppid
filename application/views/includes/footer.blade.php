@@ -34,7 +34,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <span class="icon-[tabler--map-pin] size-5 mt-0.5 text-purple-600"></span>
                 <div>
                     <span class="font-medium">Alamat:</span><br>
-                    Jl. Bonorogo No.17, Pamekasan
+                    <a href="https://maps.app.goo.gl/NqXFQESHzbLJdPks5" class="link link-hover">
+                        Jl. Bonorogo No.17, Pamekasan
+                    </a>
                 </div>
             </div>
             <div class="flex items-start gap-2">
